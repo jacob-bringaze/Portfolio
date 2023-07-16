@@ -8,7 +8,7 @@
 }
 
 body {
-  background-color: black;
+  background-color: #ffe9f3;
 }
 
 .header {
@@ -17,7 +17,7 @@ body {
   left: 0;
   width: 100%;
   padding: 15px 50px;
-  background-color: #141414;
+  background-color: #262730;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -26,7 +26,7 @@ body {
 
 .logo {
   font-size: 35px;
-  color: #f5efe8;
+  color: #eff0d1;
   text-decoration: none;
   font-family: Roboto Condensed;
   font-weight: 700;
@@ -38,36 +38,33 @@ nav a {
   flex-shrink: 1;
   padding: 0px 25px;
   text-decoration: none;
-  color: #f5efe8;
+  color: #eff0d1;
   font-weight: 700;
   transition: 0.3s;
 }
 
-nav a:hover {
-  color: #ec6302;
+#about:hover {
+  color: #87baab;
+}
+
+#projects:hover {
+  color: #87baab;
 }
 
 .button {
-  border: 3px solid #ec6302;
+  border: 3px solid #87baab;
   display: inline-block;
   padding: 15px 0;
-  margin-left: 20px;
 }
 
 .button:hover {
-  background-color: #ec63029c;
-  transition: 0.3s;
+  background-color: #87baab;
+  transition: 0.5s;
 }
 
 .button a {
   font-size: 18px;
   text-transform: uppercase;
-}
-
-.home {
-  background-image: url("./assets/PreviewSimple.png");
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .home-wrapper {
@@ -79,19 +76,24 @@ nav a:hover {
 }
 
 .home h1 {
-  color: #f5efe8;
+  color: #262730;
+  font-size: 50px;
+}
+
+.home h2 {
+  color: #87baab;
   font-size: 50px;
 }
 
 .home p {
-  color: #f5efe8;
+  color: #262730;
   padding: 25px 0px;
   font-size: 18px;
   font: Roboto, sans-serif;
 }
 
 .home-content div {
-  border: 3px solid #ec6302;
+  border: 3px solid #87baab;
   display: inline-block;
   padding: 15px 25px;
 }
@@ -99,18 +101,17 @@ nav a:hover {
 .home-content a {
   font-size: 20px;
   font-weight: 700;
-  color: #f5efe8;
+  color: #262730;
   text-decoration: none;
   text-transform: uppercase;
 }
 
 .icons {
   position: fixed;
-  margin-left: -3px;
-  top: 50%;
+  inset: 35% 0% 43% 95%;
   width: 90px;
-  background-color: #141414;
-  border: 3px solid #ec6302;
+  background-color: #262730;
+  border: 3px solid #87baab;
 }
 
 .icons a {
@@ -120,11 +121,24 @@ nav a:hover {
 
 .icons i {
   font-size: 40px;
-  color: #f5efe8;
+  color: #eff0d1;
   display: block;
   text-align: center;
 }
 
 .icons i:hover {
+  color: #87baab;
   transform: scale(1.25);
+}
+
+.wrapper {
+  margin: 50px;
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content {
+  color: #eff0d1;
 }
