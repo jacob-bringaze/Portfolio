@@ -8,7 +8,7 @@
 }
 
 body {
-  background-color: #ffe9f3;
+  background-color: #ffffff;
 }
 
 .header {
@@ -26,7 +26,7 @@ body {
 
 .logo {
   font-size: 35px;
-  color: #eff0d1;
+  color: #ffffff;
   text-decoration: none;
   font-family: Roboto Condensed;
   font-weight: 700;
@@ -38,7 +38,7 @@ nav a {
   flex-shrink: 1;
   padding: 0px 25px;
   text-decoration: none;
-  color: #eff0d1;
+  color: #ffffff;
   font-weight: 700;
   transition: 0.3s;
 }
@@ -67,12 +67,16 @@ nav a {
   text-transform: uppercase;
 }
 
+.home-wrapper h1 h2 {
+  display: inline;
+}
+
 .home-wrapper {
   height: 100vh;
   display: flex;
   align-items: center;
-  margin-left: 100px;
-  max-width: 600px;
+  margin-left: 50px;
+  max-width: 800px;
 }
 
 .home h1 {
@@ -92,14 +96,9 @@ nav a {
   font: Roboto, sans-serif;
 }
 
-.home-content div {
-  border: 3px solid #87baab;
-  display: inline-block;
-  padding: 15px 25px;
-}
-
 .home-content a {
   font-size: 20px;
+  padding: 15px 25px;
   font-weight: 700;
   color: #262730;
   text-decoration: none;
@@ -107,38 +106,53 @@ nav a {
 }
 
 .icons {
-  position: fixed;
-  inset: 35% 0% 43% 95%;
-  width: 90px;
-  background-color: #262730;
-  border: 3px solid #87baab;
+  margin-right: 100px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .icons a {
   text-decoration: none;
-  padding: 5px;
+  margin: 0;
+  padding: 0;
 }
 
 .icons i {
-  font-size: 40px;
-  color: #eff0d1;
-  display: block;
-  text-align: center;
+  display: inline;
+  font-size: 30px;
+  color: #87baab;
 }
 
 .icons i:hover {
-  color: #87baab;
+  color: #262730;
   transform: scale(1.25);
 }
 
-.wrapper {
-  margin: 50px;
-  padding: 50px;
+.title {
+  color: #ffffff;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center;
+  align-content: center;
 }
 
-.content {
-  color: #eff0d1;
+.title h1 {
+  color: #262730;
+  font-size: 50px;
+}
+
+.project-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.project1 h1 {
+  display: flex;
+}
+
+.project1 img {
+  width: 500px;
+  justify-content: right;
 }
